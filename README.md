@@ -68,11 +68,6 @@ python fun_add.py
 * Type Casting (`int()`)
 * Basic Arithmetic Operations
 
-## ⚠️ Limitations
-
-* Only supports integer inputs
-* No error handling for invalid input
-* Division by zero is not handled
 
 ## 👩‍💻 Author
 

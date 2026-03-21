@@ -1,35 +1,41 @@
 #define adding function
-def addition(inputValue1, inputValue2):
-    add = int(inputValue1) + int(inputValue2)
-    return add
+def addition(a, b):
+    return a + b 
 
 #define substraction function  
-def substraction(inputValue1, inputValue2):
-    return int(inputValue1) - int(inputValue2)
+def substraction(a, b):
+    return a - b
 
 #define multiplication function
-def multiplication(inputValue1, inputValue2):
-   return int(inputValue1) * int(inputValue2)
+def multiplication(a, b):
+   return a * b
 
-def devision(inputValue1, inputValue2):
-    return int(inputValue1) / int(inputValue2)
+#define division function
+def division(a, b):
+    if b == 0:
+        return "Cannot devided by zero"
+    return a / b
 
 #initializing inputs
-inputValue1= input("Enter the input1 value: ")
-inputValue2= input("Enter the input2 value: ")
+try: 
+    inputValue1 = int(input("Enter the input1 value: "))
+    inputValue2 = int(input("Enter the input2 value: "))
+except ValueError:
+    print("Invalid input! Please enter numbers only.")
+    exit()
 
 #calling addition function
 adding = addition(inputValue1,inputValue2)
-print("Here is the addition result: ", adding)
+print("Addition result: ", adding)
 
 #calling subtract function
 subtract = substraction(inputValue1, inputValue2)
-print("Here is the subtract result: ", subtract)
+print("subtraction result: ", subtract)
 
 #calling multiply function
 multiply = multiplication(inputValue1, inputValue2)
-print("Here is the multiplication result: ", multiply)
+print("multiplication result: ", multiply)
 
 #calling division function
-divident = devision(inputValue1, inputValue2)
-print("Here is the division value: ", divident)
+divident = division(inputValue1, inputValue2)
+print("division value: ", divident)
